@@ -1,5 +1,4 @@
-# Verewaltung (Landing Page)
-Test change from GitHub Desktop
+# Verewaltung (Landing Page) NEW
 Static multi-page landing site (HTML/CSS/JS).
 
 ## Pages
