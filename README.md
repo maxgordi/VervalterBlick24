@@ -1,4 +1,4 @@
-# Verewaltung (Landing Page) NEW
+# Verewaltung
 Static multi-page landing site (HTML/CSS/JS).
 
 ## Pages
