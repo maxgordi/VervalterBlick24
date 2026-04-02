@@ -1,0 +1,465 @@
+<!DOCTYPE html>
+
+<html class="light" lang="de"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>VerwalterBlick24 | Premium Hausverwaltung Stade &amp; Hamburg</title>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;700;800&amp;family=Inter:wght@300;400;500;600&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "surface-tint": "#465f88",
+              "on-surface": "#1a1b1e",
+              "tertiary-container": "#2b3648",
+              "tertiary-fixed": "#d8e3fa",
+              "on-primary-fixed": "#001b3d",
+              "error": "#ba1a1a",
+              "on-background": "#1a1b1e",
+              "on-tertiary-fixed": "#111c2c",
+              "inverse-primary": "#aec7f7",
+              "secondary-fixed": "#d4e3ff",
+              "surface-container-highest": "#e3e2e6",
+              "error-container": "#ffdad6",
+              "surface-container-high": "#e9e7eb",
+              "on-secondary": "#ffffff",
+              "primary-fixed": "#d6e3ff",
+              "surface-container-low": "#f4f3f7",
+              "tertiary-fixed-dim": "#bcc7dd",
+              "secondary-container": "#a5c8ff",
+              "surface-variant": "#e3e2e6",
+              "background": "#faf9fd",
+              "on-tertiary-fixed-variant": "#3c475a",
+              "on-secondary-fixed-variant": "#204877",
+              "primary-container": "#1b365d",
+              "primary-fixed-dim": "#aec7f7",
+              "outline-variant": "#c4c6cf",
+              "inverse-on-surface": "#f1f0f4",
+              "on-error-container": "#93000a",
+              "on-primary-fixed-variant": "#2e476f",
+              "on-secondary-container": "#2e5484",
+              "surface-bright": "#faf9fd",
+              "on-surface-variant": "#44474e",
+              "on-error": "#ffffff",
+              "secondary-fixed-dim": "#a5c8ff",
+              "outline": "#74777f",
+              "on-secondary-fixed": "#001c3a",
+              "on-tertiary-container": "#949fb4",
+              "on-primary-container": "#87a0cd",
+              "surface": "#faf9fd",
+              "on-primary": "#ffffff",
+              "surface-container-lowest": "#ffffff",
+              "secondary": "#3b6090",
+              "surface-dim": "#dad9dd",
+              "surface-container": "#efedf1",
+              "on-tertiary": "#ffffff",
+              "primary": "#1B365D",
+              "inverse-surface": "#2f3033",
+              "tertiary": "#162132"
+            },
+            fontFamily: {
+              "headline": ["Manrope"],
+              "body": ["Inter"],
+              "label": ["Inter"]
+            },
+            borderRadius: {"DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px"},
+          },
+        },
+      }
+    </script>
+<style>
+      .material-symbols-outlined {
+        font-variation-settings: 'FILL' 0, 'wght' 300, 'GRAD' 0, 'opsz' 24;
+      }
+      .glass-header {
+        background: rgba(250, 249, 253, 0.8);
+        backdrop-filter: blur(24px);
+      }
+      .soul-gradient {
+        background: linear-gradient(135deg, #1B365D 0%, #2e476f 100%);
+      }
+      .asymmetric-grid {
+        display: grid;
+        grid-template-columns: 1.2fr 0.8fr;
+      }
+      @media (max-width: 768px) {
+        .asymmetric-grid {
+          grid-template-columns: 1fr;
+        }
+      }
+      .wizard-step {
+        display: none;
+      }
+      .wizard-step.active {
+        display: block;
+      }
+      .editorial-image {
+        box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+        border: 1px solid rgba(116, 119, 127, 0.1);
+      }
+    </style>
+</head>
+<body class="bg-background font-body text-on-surface">
+<!-- TopNavBar -->
+<nav class="fixed top-0 w-full z-50 bg-white/80 backdrop-blur-xl border-b border-outline-variant/20">
+<div class="flex justify-between items-center w-full px-6 py-4 max-w-screen-2xl mx-auto">
+<div class="flex items-center">
+<img alt="VerwalterBlick24 Logo" class="h-10 w-auto" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAn-R1fOaP58-l-98G3X3U86L5eI2BvO7tI3A_Y6m3_q96_p7M_Q0P5u2E3R6t_S5_E7R5u3Q4P5v6E7R8T9U0V1W2X3Y4Z"/>
+</div>
+<div class="hidden md:flex items-center space-x-8">
+<a class="text-primary font-bold border-b-2 border-primary font-label text-sm tracking-wide" href="#">Home</a>
+<a class="text-on-surface-variant hover:text-primary transition-all font-label text-sm tracking-wide" href="#leistungen">Leistungen</a>
+<a class="text-on-surface-variant hover:text-primary transition-all font-label text-sm tracking-wide" href="#ueber-uns">Über uns</a>
+<a class="text-on-surface-variant hover:text-primary transition-all font-label text-sm tracking-wide" href="#standorte">Standorte</a>
+</div>
+<div class="flex items-center gap-4">
+<button class="material-symbols-outlined p-2 text-on-surface-variant hover:bg-surface-container-low rounded-full transition-all" data-icon="search">search</button>
+<button class="bg-primary text-on-primary px-6 py-2.5 rounded-sm font-label text-sm font-semibold hover:opacity-90 transition-opacity">
+                Kontakt
+            </button>
+</div>
+</div>
+</nav>
+<main class="pt-24">
+<!-- Hero Section -->
+<section class="relative px-6 py-20 md:py-32 overflow-hidden">
+<div class="max-w-screen-2xl mx-auto asymmetric-grid items-center gap-16">
+<div class="z-10">
+<h1 class="font-headline text-5xl md:text-7xl font-extrabold tracking-tighter text-primary leading-tight mb-8">
+                    Hausverwaltung Stade &amp; Hamburg – Immobilienverwaltung für Privatinvestoren und Eigentümer
+                </h1>
+<p class="text-lg md:text-xl text-on-surface-variant max-w-2xl mb-12 font-light leading-relaxed">
+                    Als Hausverwaltung in Stade und Hamburg betreuen wir Wohnungseigentümergemeinschaften, Mietobjekte und Kapitalanlagen mit klaren Prozessen und langfristiger Strategie.
+                </p>
+<div class="flex flex-col sm:flex-row gap-4">
+<button class="bg-primary text-on-primary px-8 py-4 rounded-sm font-label font-bold text-lg hover:shadow-lg transition-all">
+                        Erstgespräch vereinbaren
+                    </button>
+<button class="bg-surface-container-highest text-on-secondary-container px-8 py-4 rounded-sm font-label font-bold text-lg hover:bg-surface-variant transition-all">
+                        Unsere Expertise
+                    </button>
+</div>
+</div>
+<div class="relative hidden md:block">
+<div class="aspect-[4/5] bg-surface-container-high rounded-sm overflow-hidden shadow-2xl editorial-image">
+<img alt="High-end modern apartment building" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCMM1PHcnT7rhn_jDvqMcu3q1oP31qkGDLKJpmQd-bPGpDxUfmNcOvf95mvKp8XEsTSNM3M5NKTUVjrxvyoPvia3vtLxjTRnt8X2LGBBZHiSW2RSv9b5rlndkaQQesEtxQZUhyFNzu0oZ5bs6Mtdc0QERxX8QGBkl1SJA7iyvn8MwqhIupwl4_kMmVXVnoG7VwhKt8cBFMaERFPMnPLKjcpKR6o5PR4Mbzigv3R9yITaJF1eVCJB_7PUV3M1ozpD70uEU6K5Ym0ThQ"/>
+</div>
+<div class="absolute -bottom-8 -left-8 bg-white p-8 shadow-2xl rounded-sm max-w-xs border-l-4 border-primary">
+<span class="material-symbols-outlined text-primary text-4xl mb-4" data-icon="verified_user">verified_user</span>
+<p class="text-primary font-headline font-bold text-xl leading-snug">Zertifizierte Verwaltung nach § 26a WoEigG</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Wizard Contact Form Section -->
+<section class="bg-primary py-24 px-6 relative overflow-hidden">
+<div class="max-w-7xl mx-auto relative z-10">
+<div class="text-center mb-16">
+<h2 class="font-headline text-3xl md:text-5xl font-bold text-on-primary mb-6">Ganzheitliche Immobilienverwaltung für Ihren Erfolg</h2>
+<p class="text-on-primary-container text-lg max-w-3xl mx-auto leading-relaxed">Wir bieten maßgeschneiderte Lösungen für WEG-Verwaltung, Mietverwaltung für Privatinvestoren und Sonderverwaltung. Unser Fokus liegt auf Werterhalt, Transparenz und einer proaktiven Strategie.</p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+<!-- Card 1: WEG-Management -->
+<div class="bg-surface-container-lowest p-10 rounded-sm border border-outline-variant/10 hover:shadow-xl transition-all group">
+<div class="w-16 h-16 bg-primary/10 rounded-sm flex items-center justify-center mb-8 group-hover:bg-primary transition-colors">
+<span class="material-symbols-outlined text-4xl text-primary group-hover:text-on-primary transition-colors" data-icon="corporate_fare">corporate_fare</span>
+</div>
+<h3 class="text-2xl font-headline font-bold text-primary mb-4">WEG-Management</h3>
+<p class="text-on-surface-variant leading-relaxed">Zertifizierte Verwaltung von Wohnungseigentümergemeinschaften mit höchstem Anspruch an Transparenz und Rechtssicherheit.</p>
+</div>
+<!-- Card 2: Rental Admin -->
+<div class="bg-surface-container-lowest p-10 rounded-sm border border-outline-variant/10 hover:shadow-xl transition-all group">
+<div class="w-16 h-16 bg-primary/10 rounded-sm flex items-center justify-center mb-8 group-hover:bg-primary transition-colors">
+<span class="material-symbols-outlined text-4xl text-primary group-hover:text-on-primary transition-colors" data-icon="real_estate_agent">real_estate_agent</span>
+</div>
+<h3 class="text-2xl font-headline font-bold text-primary mb-4">Rental Admin</h3>
+<p class="text-on-surface-variant leading-relaxed">Effiziente Mietverwaltung für Privatinvestoren – von der Mieterauswahl bis zum kaufmännischen Reporting.</p>
+</div>
+<!-- Card 3: Asset Strategy -->
+<div class="bg-surface-container-lowest p-10 rounded-sm border border-outline-variant/10 hover:shadow-xl transition-all group">
+<div class="w-16 h-16 bg-primary/10 rounded-sm flex items-center justify-center mb-8 group-hover:bg-primary transition-colors">
+<span class="material-symbols-outlined text-4xl text-primary group-hover:text-on-primary transition-colors" data-icon="insights">insights</span>
+</div>
+<h3 class="text-2xl font-headline font-bold text-primary mb-4">Asset Strategy</h3>
+<p class="text-on-surface-variant leading-relaxed">Proaktive Werterhaltungsstrategien und Renditeoptimierung für Ihr Immobilienportfolio in Stade und Hamburg.</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Pain Points Section -->
+<section class="bg-surface-container-low py-24 px-6">
+<div class="max-w-screen-xl mx-auto text-center mb-20">
+<h2 class="font-headline text-3xl md:text-5xl font-bold text-primary mb-6">Warum viele Eigentümer ihre Hausverwaltung wechseln</h2>
+<p class="text-on-surface-variant max-w-2xl mx-auto">Fehlende Erreichbarkeit und unübersichtliche Abrechnungen sind die häufigsten Gründe für Frust. Wir setzen dort an, wo andere aufhören.</p>
+</div>
+<div class="max-w-screen-2xl mx-auto grid md:grid-cols-2 gap-8">
+<div class="bg-white p-10 rounded-sm transition-all hover:shadow-md group border border-outline-variant/10">
+<div class="flex items-start gap-6">
+<span class="material-symbols-outlined text-4xl text-error/60" data-icon="phone_disabled">phone_disabled</span>
+<div>
+<h3 class="font-headline text-2xl font-bold mb-4">Mangelnde Erreichbarkeit</h3>
+<p class="text-on-surface-variant leading-relaxed">Bei uns gibt es keine anonymen Callcenter. Sie haben einen festen Ansprechpartner, der Ihre Immobilie wirklich kennt.</p>
+</div>
+</div>
+</div>
+<div class="bg-white p-10 rounded-sm transition-all hover:shadow-md border border-outline-variant/10">
+<div class="flex items-start gap-6">
+<span class="material-symbols-outlined text-4xl text-error/60" data-icon="account_balance_wallet">account_balance_wallet</span>
+<div>
+<h3 class="font-headline text-2xl font-bold mb-4">Fehlerhafte Buchhaltung</h3>
+<p class="text-on-surface-variant leading-relaxed">Transparenz ist unser höchstes Gut. Unsere Abrechnungen sind rechtssicher, geprüft und für jeden Eigentümer sofort nachvollziehbar.</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Investor Perspective -->
+<section class="py-32 px-6" id="ueber-uns">
+<div class="max-w-screen-2xl mx-auto grid md:grid-cols-2 gap-20 items-center">
+<div class="order-2 md:order-1">
+<div class="relative">
+<img alt="Modern office conference room" class="rounded-sm shadow-xl editorial-image w-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB4ZAA-on78vfxUfIN3PZY5cyBNkNvNgcub0rjkr6nd_M2iBv46wg62rtBhyl4wY-JOQRXjCBJ5TKD676R6iBlMzYi2B1wTnPVRfLuY44pjLBsHS717CHshLQ1ylTxvGDtlzxeESjSoI0LwnyendtDbueTY_bV9vbiiOsu9oojbm1Tmq_gwQTAqqJ7vj5Mg-TKehDYBvDM8dPZLjB5EP2befD2Wk-F0aoUW9fVB3SuzvVhRXFpuxUQXb9xe5kj1TuMYnuLzQX0ecDU"/>
+</div>
+</div>
+<div class="order-1 md:order-2">
+<span class="text-primary font-label font-bold tracking-widest uppercase text-sm mb-4 block border-l-2 border-primary pl-4">Unsere Wurzeln</span>
+<h2 class="font-headline text-4xl md:text-5xl font-bold text-primary mb-8 leading-tight">Hausverwaltung aus Investorensicht</h2>
+<p class="text-lg text-on-surface-variant mb-8 leading-relaxed">
+                    Wir sind nicht nur Verwalter, wir sind selbst Investoren. Mit über 20 Jahren Erfahrung in der Immobilienwirtschaft wissen wir genau, worauf es ankommt: Werterhalt, Renditeoptimierung und rechtliche Sicherheit.
+                </p>
+<div class="space-y-6">
+<div class="flex items-center gap-4">
+<div class="w-12 h-12 rounded-sm bg-primary/10 flex items-center justify-center text-primary">
+<span class="material-symbols-outlined" data-icon="trending_up">trending_up</span>
+</div>
+<span class="font-bold text-primary">Renditeorientierte Strategie</span>
+</div>
+<div class="flex items-center gap-4">
+<div class="w-12 h-12 rounded-sm bg-primary/10 flex items-center justify-center text-primary">
+<span class="material-symbols-outlined" data-icon="history">history</span>
+</div>
+<span class="font-bold text-primary">20 Jahre Markterfahrung</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Team Section -->
+<section class="py-24 px-6 bg-surface-container-low">
+<div class="max-w-screen-2xl mx-auto">
+<div class="mb-20 text-center md:text-left">
+<h2 class="font-headline text-4xl md:text-5xl font-bold text-primary mb-8">Persönliche Betreuung ist unser Fundament</h2>
+<p class="text-lg text-on-surface-variant mb-10 max-w-3xl leading-relaxed">
+                    Bei VerwalterBlick24 sind Sie keine Nummer. Unser Team aus erfahrenen Immobilienkaufleuten und Technikern arbeitet Hand in Hand für den Erfolg Ihrer Immobilie.
+                </p>
+<div class="grid md:grid-cols-2 gap-8 max-w-4xl">
+<div class="flex gap-4">
+<span class="material-symbols-outlined text-primary text-3xl shrink-0" data-icon="support_agent">support_agent</span>
+<div>
+<h4 class="font-headline text-xl font-bold text-primary mb-2">Feste Ansprechpartner</h4>
+<p class="text-on-surface-variant text-sm leading-relaxed">Direkte Durchwahl zu Ihrem Objektverwalter ohne anonyme Warteschleifen.</p>
+</div>
+</div>
+<div class="flex gap-4">
+<span class="material-symbols-outlined text-primary text-3xl shrink-0" data-icon="school">school</span>
+<div>
+<h4 class="font-headline text-xl font-bold text-primary mb-2">Fachliche Expertise</h4>
+<p class="text-on-surface-variant text-sm leading-relaxed">Durch regelmäßige Fortbildungen und Zertifizierungen sichern wir höchste Beratungsqualität.</p>
+</div>
+</div>
+</div>
+</div>
+<!-- Team Members Container -->
+<div class="space-y-24">
+<!-- Elena Weigel (Standard) -->
+<div class="grid md:grid-cols-2 gap-16 items-center">
+<div class="relative">
+<div class="aspect-[4/5] overflow-hidden rounded-sm shadow-2xl editorial-image">
+<img alt="Elena Weigel" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDZt8_mNsOfKW-fDvbHAbRt9yzhrMLKSFcnk0dizblAGc6N9ZW26VVLowQUpzH1dM5_cy2PHUbXCzOh6ikm4EucLkO3LoC0uTpfFNjQbUPCxGersU6KwOCFGswRXcVdyYeAZG7Sasm_X0msugYb2Q2f0cwI70MF4LCQLFNuo92Gt9GcUBPIYhgnQ1E7lRAt7hQR8I-3AzSTxjyrDlkHomOHHLLY8C7ubBIj5j3ZohsLEPz_bnd8HGZew_XYvI1iaFuQSnaB-ikxnNk"/>
+</div>
+<div class="absolute bottom-0 right-0 left-12 bg-white p-8 translate-y-8 shadow-xl border-t-4 border-primary">
+<h3 class="font-headline text-3xl font-bold text-primary mb-2">Elena Weigel</h3>
+<p class="text-on-surface-variant font-label uppercase tracking-widest text-sm mb-4">Geschäftsführung | Immobilienkauffrau</p>
+<p class="text-on-surface-variant leading-relaxed italic">"Mein Fokus liegt auf der strategischen Ausrichtung und der persönlichen Begleitung unserer Kunden. Transparenz und Zuverlässigkeit sind für mich die Basis jeder erfolgreichen Zusammenarbeit."</p>
+</div>
+</div>
+<div class="pt-20 md:pt-0">
+<h4 class="font-headline text-2xl font-bold text-primary mb-6">Expertise &amp; Vision</h4>
+<p class="text-on-surface-variant mb-6 leading-relaxed">
+                            Als gelernte Immobilienkauffrau mit jahrelanger Erfahrung in der WEG- und Mietverwaltung verantwortet Elena Weigel die operativen Prozesse bei VerwalterBlick24. Ihr tiefgreifendes Verständnis für rechtliche Rahmenbedingungen und moderne Verwaltungssoftware stellt sicher, dass Ihre Immobilie nach aktuellsten Standards betreut wird.
+                        </p>
+<ul class="space-y-4 text-on-surface-variant">
+<li class="flex items-center gap-3"><span class="material-symbols-outlined text-primary text-xl" data-icon="check_circle">check_circle</span> Prozessoptimierung &amp; Digitalisierung</li>
+<li class="flex items-center gap-3"><span class="material-symbols-outlined text-primary text-xl" data-icon="check_circle">check_circle</span> Strategisches Instandhaltungsmanagement</li>
+<li class="flex items-center gap-3"><span class="material-symbols-outlined text-primary text-xl" data-icon="check_circle">check_circle</span> Zertifizierte Verwalterin nach § 26a WoEigG</li>
+</ul>
+</div>
+</div>
+<!-- Alexander Weigel (Mirrored) -->
+<div class="grid md:grid-cols-2 gap-16 items-center">
+<div class="order-2 md:order-1">
+<h4 class="font-headline text-2xl font-bold text-primary mb-6">Investor &amp; Strategie</h4>
+<p class="text-on-surface-variant mb-6 leading-relaxed">
+                            Alexander Weigel bringt die wertvolle Perspektive eines aktiven Immobilieninvestors in die Geschäftsführung ein. Mit seinem Background in der Projektentwicklung and seinem scharfen Blick für Renditepotentiale berät er Eigentümer bei der langfristigen Wertsteigerung ihres Portfolios. Er versteht die Bedürfnisse von Kapitalanlegern aus erster Hand.
+                        </p>
+<ul class="space-y-4 text-on-surface-variant">
+<li class="flex items-center gap-3"><span class="material-symbols-outlined text-primary text-xl" data-icon="check_circle">check_circle</span> Renditeoptimierung &amp; Marktanalyse</li>
+<li class="flex items-center gap-3"><span class="material-symbols-outlined text-primary text-xl" data-icon="check_circle">check_circle</span> Finanzierung &amp; Portfoliostrukturierung</li>
+<li class="flex items-center gap-3"><span class="material-symbols-outlined text-primary text-xl" data-icon="check_circle">check_circle</span> Netzwerkausbau im Hamburger Raum</li>
+</ul>
+</div>
+<div class="relative order-1 md:order-2">
+<div class="aspect-[4/5] overflow-hidden rounded-sm shadow-2xl editorial-image">
+<img alt="Alexander Weigel" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBhlA4OyRvNct3oEIDW7TbawI-fD2dKgpfdzhs2XIGk28XeJkw0S1tooBp53cmuguklOLf2Ft3UHTxsNu4YFvhdUnpimzEKi-_L_vjOmmclbUnlaxYNlyWJU6dF82qG3lHFVBlKAT7j_AHwrWAsZKqm_VWjgWW0WpJFhFxIaLweMiakO3lmB2c-mJP_sMos-zylIlzpMynQqVPK5j_gmSukcCxBpdTNjUy0cYUH-rfuC5pNXYAdjdHLnMtyCz2lHk3lE-zDpD1my8s"/>
+</div>
+<div class="absolute bottom-0 left-0 right-12 bg-white p-8 translate-y-8 shadow-xl border-t-4 border-primary">
+<h3 class="font-headline text-3xl font-bold text-primary mb-2">Alexander Weigel</h3>
+<p class="text-on-surface-variant font-label uppercase tracking-widest text-sm mb-4">Geschäftsführung | Investor</p>
+<p class="text-on-surface-variant leading-relaxed italic">"Eine gute Hausverwaltung ist kein Kostenfaktor, sondern ein Werkzeug zur Renditesicherung. Wir verwalten Ihre Objekte so gewissenhaft wie unser eigenes Portfolio."</p>
+</div>
+</div>
+</div>
+</div>
+<!-- Team Card at bottom -->
+<div class="mt-32 flex items-center gap-6 p-6 border border-outline-variant/20 rounded-sm bg-white max-w-sm">
+<div class="w-32 h-16 bg-surface-container-high rounded-sm overflow-hidden editorial-image">
+<img alt="Team architecture context" class="w-full h-full object-cover opacity-50 grayscale" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB4ZAA-on78vfxUfIN3PZY5cyBNkNvNgcub0rjkr6nd_M2iBv46wg62rtBhyl4wY-JOQRXjCBJ5TKD676R6iBlMzYi2B1wTnPVRfLuY44pjLBsHS717CHshLQ1ylTxvGDtlzxeESjSoI0LwnyendtDbueTY_bV9vbiiOsu9oojbm1Tmq_gwQTAqqJ7vj5Mg-TKehDYBvDM8dPZLjB5EP2befD2Wk-F0aoUW9fVB3SuzvVhRXFpuxUQXb9xe5kj1TuMYnuLzQX0ecDU"/>
+</div>
+<div>
+<p class="text-primary font-bold">Unser gesamtes Team</p>
+<p class="text-on-surface-variant text-sm">15 Experten für Ihre Immobilie</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Leistungen -->
+<section class="bg-white py-32 px-6" id="leistungen">
+<div class="max-w-screen-2xl mx-auto">
+<div class="flex flex-col md:flex-row justify-between items-end mb-16 gap-8">
+<div class="max-w-xl">
+<h2 class="font-headline text-4xl md:text-6xl font-extrabold text-primary mb-6">Leistungen</h2>
+<p class="text-on-surface-variant">Modulare Verwaltungslösungen für jede Anforderung.</p>
+</div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+<div class="bg-surface-container-low p-12 rounded-sm border border-outline-variant/10 shadow-sm hover:shadow-xl transition-all flex flex-col justify-between min-h-[400px]">
+<div>
+<span class="material-symbols-outlined text-5xl text-primary mb-8" data-icon="corporate_fare">corporate_fare</span>
+<h3 class="font-headline text-2xl font-bold text-primary mb-4">WEG-Verwaltung</h3>
+<p class="text-on-surface-variant leading-relaxed">Professionelle Betreuung von Eigentümergemeinschaften mit Fokus auf Transparenz und Gemeinschaftsfrieden.</p>
+</div>
+<a class="text-primary font-bold flex items-center gap-2 group mt-8" href="#">Details <span class="material-symbols-outlined group-hover:translate-x-1 transition-transform" data-icon="arrow_forward">arrow_forward</span></a>
+</div>
+<div class="bg-primary p-12 rounded-sm shadow-xl flex flex-col justify-between min-h-[400px] text-on-primary">
+<div>
+<span class="material-symbols-outlined text-5xl text-on-primary-container mb-8" data-icon="apartment">apartment</span>
+<h3 class="font-headline text-2xl font-bold mb-4">Mietverwaltung</h3>
+<p class="text-on-primary-container leading-relaxed">Vollumfängliche Betreuung Ihres Zinshauses – von der Neuvermietung bis zum Instandhaltungsmanagement.</p>
+</div>
+<a class="text-white font-bold flex items-center gap-2 group mt-8" href="#">Details <span class="material-symbols-outlined group-hover:translate-x-1 transition-transform" data-icon="arrow_forward">arrow_forward</span></a>
+</div>
+<div class="bg-surface-container-low p-12 rounded-sm border border-outline-variant/10 shadow-sm hover:shadow-xl transition-all flex flex-col justify-between min-h-[400px]">
+<div>
+<span class="material-symbols-outlined text-5xl text-primary mb-8" data-icon="person_pin">person_pin</span>
+<h3 class="font-headline text-2xl font-bold text-primary mb-4">Sonderverwaltung</h3>
+<p class="text-on-surface-variant leading-relaxed">Individuelle Betreuung einzelner Sondereigentumseinheiten innerhalb einer WEG für externe Kapitalanleger.</p>
+</div>
+<a class="text-primary font-bold flex items-center gap-2 group mt-8" href="#">Details <span class="material-symbols-outlined group-hover:translate-x-1 transition-transform" data-icon="arrow_forward">arrow_forward</span></a>
+</div>
+</div>
+</div>
+</section>
+<!-- So arbeiten wir -->
+<section class="py-32 px-6">
+<div class="max-w-screen-xl mx-auto">
+<div class="text-center mb-24">
+<h2 class="font-headline text-4xl font-bold text-primary mb-4">So arbeiten wir</h2>
+<p class="text-on-surface-variant">Vier Phasen für Ihre sorgenfreie Immobilie.</p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-4 gap-12 relative">
+<!-- Progress Line -->
+<div class="hidden md:block absolute top-1/4 left-0 w-full h-[1px] bg-primary/20 -z-10"></div>
+<div class="flex flex-col items-center text-center group">
+<div class="w-16 h-16 rounded-sm bg-surface-container-highest flex items-center justify-center font-headline font-bold text-primary mb-6 group-hover:bg-primary group-hover:text-on-primary transition-all duration-300">1</div>
+<h4 class="font-bold text-xl mb-3">Analyse</h4>
+<p class="text-sm text-on-surface-variant">Wir prüfen den Ist-Zustand Ihrer Dokumente und Immobilie.</p>
+</div>
+<div class="flex flex-col items-center text-center group">
+<div class="w-16 h-16 rounded-sm bg-surface-container-highest flex items-center justify-center font-headline font-bold text-primary mb-6 group-hover:bg-primary group-hover:text-on-primary transition-all duration-300">2</div>
+<h4 class="font-bold text-xl mb-3">Konzept</h4>
+<p class="text-sm text-on-surface-variant">Erstellung einer individuellen Strategie für Verwaltung und Werterhalt.</p>
+</div>
+<div class="flex flex-col items-center text-center group">
+<div class="w-16 h-16 rounded-sm bg-surface-container-highest flex items-center justify-center font-headline font-bold text-primary mb-6 group-hover:bg-primary group-hover:text-on-primary transition-all duration-300">3</div>
+<h4 class="font-bold text-xl mb-3">Übergabe</h4>
+<p class="text-sm text-on-surface-variant">Nahtlose Datenübernahme von der Vorverwaltung ohne Lücken.</p>
+</div>
+<div class="flex flex-col items-center text-center group">
+<div class="w-16 h-16 rounded-sm bg-surface-container-highest flex items-center justify-center font-headline font-bold text-primary mb-6 group-hover:bg-primary group-hover:text-on-primary transition-all duration-300">4</div>
+<h4 class="font-bold text-xl mb-3">Betreuung</h4>
+<p class="text-sm text-on-surface-variant">Langfristige Begleitung mit klaren Berichten und persönlicher Nähe.</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Regionale Nähe -->
+<section class="bg-surface-container-low py-32 px-6" id="standorte">
+<div class="max-w-screen-2xl mx-auto grid md:grid-cols-2 gap-16 items-center">
+<div>
+<h2 class="font-headline text-4xl md:text-5xl font-extrabold text-primary mb-8">Regionale Nähe</h2>
+<p class="text-lg text-on-surface-variant mb-12">
+                    Immobilienverwaltung braucht Präsenz. Wir sind dort, wo Ihre Objekte sind. Kurze Wege ermöglichen uns regelmäßige Begehungen und schnelle Reaktionen bei Notfällen.
+                </p>
+<div class="flex flex-wrap gap-3">
+<span class="bg-primary/10 text-primary px-6 py-2 rounded-sm text-sm font-bold">Stade</span>
+<span class="bg-primary/10 text-primary px-6 py-2 rounded-sm text-sm font-bold">Hamburg</span>
+<span class="bg-primary/10 text-primary px-6 py-2 rounded-sm text-sm font-bold">Buxtehude</span>
+<span class="bg-primary/10 text-primary px-6 py-2 rounded-sm text-sm font-bold">Drochtersen</span>
+</div>
+</div>
+<div class="rounded-sm overflow-hidden h-[450px] shadow-lg editorial-image">
+<img alt="Map of Northern Germany" class="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-700" data-location="Stade" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA-_jP8nHe8AFMtzC7cJ4zv3HPNW4VDghWEG_wAh4fsxFkErev3xZJH1yy-S-lK-eUgS3tQozZbXx9f6ki1RNhDtQUEGtQKAUF7dM03t6D7SycPMndBGvxJUKPtPcxV3Vy-qIgQvytgXyIyC1PSU5FcynHF3dGUDV_pUgqpULoSScoeIk-VQESB3QBBxdPdA1uupuQ1NmjL5aT6v3MuWSY5XpocW4tH8g31UaSqNwfCYeFfaej3LPK5KwqEMG87vy4mqZnKBgeJ0Y4"/>
+</div>
+</div>
+</section>
+<!-- CTA Final -->
+<section class="py-32 px-6 text-center">
+<div class="max-w-screen-md mx-auto bg-white p-16 rounded-sm shadow-2xl border border-outline-variant/10">
+<h2 class="font-headline text-3xl md:text-5xl font-bold text-primary mb-6">Bereit für den Wechsel?</h2>
+<p class="text-on-surface-variant mb-10 text-lg">Lassen Sie uns in einem unverbindlichen Gespräch analysieren, wie wir Ihre Immobilienverwaltung professionalisieren können.</p>
+<button class="bg-primary text-on-primary px-12 py-5 rounded-sm font-label font-bold text-xl hover:opacity-90 transition-all shadow-xl">
+                Jetzt Erstgespräch vereinbaren
+            </button>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="w-full border-t border-outline-variant/20 bg-surface-container-low">
+<div class="flex flex-col md:flex-row justify-between items-center px-8 py-12 w-full max-w-screen-2xl mx-auto">
+<div class="mb-8 md:mb-0">
+<img alt="VerwalterBlick24 Logo" class="h-8 w-auto mb-2" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAn-R1fOaP58-l-98G3X3U86L5eI2BvO7tI3A_Y6m3_q96_p7M_Q0P5u2E3R6t_S5_E7R5u3Q4P5v6E7R8T9U0V1W2X3Y4Z"/>
+<p class="text-on-surface-variant text-sm tracking-wide">© 2024 VerwalterBlick24. All rights reserved.</p>
+</div>
+<div class="flex flex-wrap justify-center gap-8">
+<a class="text-on-surface-variant hover:text-primary transition-colors duration-200 text-sm tracking-wide" href="#">Impressum</a>
+<a class="text-on-surface-variant hover:text-primary transition-colors duration-200 text-sm tracking-wide" href="#">Datenschutz</a>
+<a class="text-on-surface-variant hover:text-primary transition-colors duration-200 text-sm tracking-wide" href="#">AGB</a>
+<a class="text-primary font-bold hover:underline transition-colors duration-200 text-sm tracking-wide" href="#">Support kontaktieren</a>
+</div>
+</div>
+</footer>
+<script>
+    function nextStep() {
+        document.getElementById('step-1').classList.remove('active');
+        document.getElementById('step-2').classList.add('active');
+    }
+    function prevStep() {
+        document.getElementById('step-2').classList.remove('active');
+        document.getElementById('step-1').classList.add('active');
+    }
+</script>
+</body></html>

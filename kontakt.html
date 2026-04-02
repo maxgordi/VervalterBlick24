@@ -1,0 +1,143 @@
+<!doctype html>
+<html lang="de">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="color-scheme" content="light" />
+    <title>Kontakt | Verewaltung – Erstgespräch & Anfrage</title>
+    <meta
+      name="description"
+      content="Kontakt: Erstgespräch vereinbaren oder Anfrage senden. Wir betreuen Immobilien in Stade, Hamburg und Norddeutschland."
+    />
+    <link rel="canonical" href="kontakt.html" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Kontakt | Verewaltung" />
+    <meta property="og:description" content="Unverbindlich Kontakt aufnehmen – wir prüfen Ihre Situation." />
+    <meta property="og:locale" content="de_DE" />
+    <meta property="og:url" content="/kontakt.html" />
+    <meta property="og:image" content="assets/og.png" />
+    <link rel="icon" href="assets/favicon.svg" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <script defer src="app.js"></script>
+  </head>
+  <body data-page="kontakt">
+    <a class="skip-link" href="#main">Zum Inhalt springen</a>
+    <div id="site-header"></div>
+
+    <main id="main">
+      <section class="hero hero--contact">
+        <div class="hero__bg" aria-hidden="true"></div>
+        <div class="container hero__grid">
+          <div class="hero__copy">
+            <div class="badge reveal">Kontakt</div>
+            <h1 class="h1 reveal">Jetzt unverbindlich Kontakt aufnehmen</h1>
+            <p class="lead reveal">
+              Sie suchen eine neue Hausverwaltung in Stade oder Hamburg oder möchten prüfen, ob ein Wechsel sinnvoll ist?
+              Wir schauen uns Ihre Situation unverbindlich an.
+            </p>
+            <div class="cta-row reveal">
+              <a class="btn btn--primary" href="#formular">Anfrage senden</a>
+              <a class="btn btn--ghost" href="tel:+49000000000">Anrufen</a>
+            </div>
+          </div>
+          <div class="hero__panel reveal">
+            <div class="glass-card">
+              <div class="glass-card__kicker">Region</div>
+              <div class="glass-card__title">Stade • Hamburg • Norddeutschland</div>
+              <p class="muted">Persönlich, strukturiert, verbindlich.</p>
+              <div class="divider"></div>
+              <div class="contact-quick">
+                <a class="contact-quick__item" href="mailto:kontakt@verewaltung.de">
+                  <span class="contact-quick__label">E-Mail</span>
+                  <span class="contact-quick__value">kontakt@verewaltung.de</span>
+                </a>
+                <a class="contact-quick__item" href="tel:+49000000000">
+                  <span class="contact-quick__label">Telefon</span>
+                  <span class="contact-quick__value">+49 000 000000</span>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="formular" class="section">
+        <div class="container">
+          <div class="section__head">
+            <h2 class="h2 reveal">Anfrage senden</h2>
+            <p class="subhead reveal">Kurze Infos reichen – wir melden uns zeitnah zurück.</p>
+          </div>
+
+          <div class="grid-2">
+            <form class="form card reveal" id="contact-form">
+              <div class="field">
+                <label for="name">Name</label>
+                <input id="name" name="name" autocomplete="name" required placeholder="Ihr Name" />
+              </div>
+              <div class="field">
+                <label for="email">E-Mail</label>
+                <input
+                  id="email"
+                  name="email"
+                  type="email"
+                  autocomplete="email"
+                  required
+                  placeholder="name@beispiel.de"
+                />
+              </div>
+              <div class="field">
+                <label for="phone">Telefon (optional)</label>
+                <input id="phone" name="phone" autocomplete="tel" placeholder="+49 ..." />
+              </div>
+              <div class="field">
+                <label for="subject">Thema</label>
+                <select id="subject" name="subject" required>
+                  <option value="" selected disabled>Bitte auswählen</option>
+                  <option>WEG Verwaltung</option>
+                  <option>Mietverwaltung</option>
+                  <option>Sonderverwaltung</option>
+                  <option>Wechsel prüfen</option>
+                  <option>Allgemeine Frage</option>
+                </select>
+              </div>
+              <div class="field field--full">
+                <label for="message">Nachricht</label>
+                <textarea id="message" name="message" rows="6" required placeholder="Kurz Ihre Situation / Ziele"></textarea>
+              </div>
+              <div class="form__actions field--full">
+                <button class="btn btn--primary" type="submit">Anfrage vorbereiten</button>
+                <p class="muted small">
+                  Datenschutz: Diese Demo nutzt einen Mailto-Entwurf. Für ein echtes Formular kann ein Backend oder
+                  Anbieter (z. B. Formspree) angebunden werden.
+                </p>
+              </div>
+            </form>
+
+            <aside class="card card--accent reveal">
+              <h3 class="h3">Was passiert nach Ihrer Anfrage?</h3>
+              <ol class="mini-steps">
+                <li><span>1</span> Kurze Sichtung Ihrer Angaben</li>
+                <li><span>2</span> Rückmeldung mit nächsten Schritten</li>
+                <li><span>3</span> Erstgespräch (15–20 Minuten)</li>
+                <li><span>4</span> Bei Interesse: Analyse & Konzept</li>
+              </ol>
+              <div class="divider"></div>
+              <p class="muted">
+                Ziel: ruhige, klare Struktur – passend zu Ihrer Immobilie, nicht „von der Stange“.
+              </p>
+              <a class="btn btn--secondary btn--full" href="referenzen.html">Referenzen ansehen</a>
+            </aside>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <div id="site-footer"></div>
+  </body>
+</html>
